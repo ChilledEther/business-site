@@ -7,7 +7,7 @@ permalink: /services/
 
 With the current tech landscape evolving rapidly, it's hard to know what the right approach is to deploying software into the cloud.
 
-I can work closely with entrepreneurs and small businesses to take their ideas from source code to running in production in the cloud with  scalability.
+I can work closely with entrepreneurs and small businesses to take their ideas from source code to running in production in the cloud.
 
 # 🫰 Prices
 
