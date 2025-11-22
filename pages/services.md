@@ -7,7 +7,8 @@ permalink: /services/
 
 With the current tech landscape evolving rapidly, it's hard to know what the right approach is to deploying software into the cloud.
 
-I work closely with entrepreneur's to take their ideas from compiled software to be launched into the cloud.
+I can work closely with entrepreneurs to take their ideas from written software to being deployed into the cloud.
+I work closely with 's, and SME's to take their ideas from compiled software to be launched into the cloud.
 
 # Services I offer
 
@@ -16,6 +17,11 @@ I work closely with entrepreneur's to take their ideas from compiled software to
   * Infrastructure-as-Code
   * GitOps
   * Kubernetes or a PaaS offering from a Cloud Service Provider (CSP) such as Azure, Amazon Web Services (AWS), and Google Cloud Provider (GCP)
-* Teach modern CI/CD methodology and how to achieve this using GitHub and AI.
+* Teach modern CI/CD methodology and how to achieve this using GitHub.
+* How to use Agentic AI when coding (such as vibe coding)
 * Troubleshooting infrastructure related issues
-* Creating automation for things around this
+* Creating automation using PowerShell, workflows, and kubernetes
+
+# Entrepreneurs
+
+# SMEs
