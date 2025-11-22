@@ -1,17 +1,24 @@
 ---
 layout: page
 title: About me
-# subtitle: Why you'd want to go on a date with me
 permalink: /aboutme/
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+👋 Hey, I'm Jarred and I like to help solve problems with getting software delivered into the cloud.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I have a passion for large scale automation and working closely with people to solve their technical problems.
+I am very honest and upfront about things, and prefer to keep things transparent.
 
-What else do you need?
+# 📖 My story
 
-### My story
+I have worked in IT for the past 15+ years for various companies. Working in traditional setups and large software businesses that offer SaaS solutions to global companies.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Some of the fields I have worked in:
+
+* Oil and Gas
+* Finance
+* Data
+* Retail
+* Consultancy
+
+This broad exposure has allowed me to gain a lot of knowledge in how businesses operate, what their common pitfalls are, and what good looks like. This allows me to steer businesses in the right direction when it comes to software delivery and ensure that entrepreneurs don't fall into traps as they start to scale up.
