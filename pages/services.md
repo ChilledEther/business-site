@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Services
-# subtitle: Services I offer
 permalink: /services/
 ---
 
@@ -21,12 +20,14 @@ Some of the main services I offer are:
   * Infrastructure-as-Code
   * GitOps
   * Kubernetes or a Platform-as-a-Service (PaaS) offering from a Cloud Service Provider (CSP)
-* Build the appropriate CI/CD workflows using GitHub
-* How you can leverage agentic AI when working on your product
+* Build appropriate CI/CD workflows (GitHub only)
+* Teach how you can leverage agentic AI when working on your product
 * Troubleshooting infrastructure related issues
 * Build automated solutions to fill any gaps
+* Migrations to from one git provider to GitHub
+  * Including workflows and actions
 
-But it doesn't stop there! I am happy to work with you to help you solve any other tech related issues. 
+But it doesn't stop there! I am happy to work with you to help you solve any other tech related issues, but I specialise only in modern tech. 
 
 # 👶 Entrepreneurs
 
