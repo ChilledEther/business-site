@@ -36,4 +36,22 @@ It can be leveraged and used for various other things such as infrastructure pro
 
 # 🏗️ Infrastructure-as-Code
 
-When it comes to infrastructure, it is best to have the infrastructure declared in code.
+When it comes to infrastructure, it is best to have the infrastructure declared in code. There are a few main ways to do this and quite a few tools out there.
+
+Some of the main tools used are:
+
+* Terraform (Cloud agnostic)
+* Pulumi (Cloud agnostic)
+* Bicep (Azure only)
+* Crossplane, or another operator (Kubernetes - GitOps)
+
+Over the years, I have started to lean more into the Kubernetes GitOps approach for a number of reasons. 
+It is easier to create high level abstractions for developers, and put the complex ownership of infrastructure to a dedicated team (as you grow).
+
+Because of GitOps, it means that the code is the source of truth. If it exists in code, it'll provision. When you're done with it, removing it from code means that the infrastructure is destroyed. You do not need additional workflows to provision as a result where the other methods would require this.
+
+# 🤺 GitOps
+
+GitOps simply stands for Git Operations. This means that your code is the source of truth. It is primarily used in the Kubernetes space for Infrastructure and Application provisioning, but the principles can be applied outside of this.
+
+Because git has version control, it makes it very easy for rollbacks, auditing, compliance, and automation.
