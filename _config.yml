@@ -13,18 +13,20 @@
 title: My website
 
 # Your name to show in the footer
-author: Some Person
+author: Jarred Roberts
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
+  Services: "services"
+  Blog: "blog"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+
 
 ################
 # --- Logo --- #
@@ -41,7 +43,6 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
-
 #####################################
 # --- Footer social media links --- #
 #####################################
@@ -50,14 +51,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "jarredroberts@outlook.com"
+# rss: true  # remove this line if you don't want to show an RSS link at the bottom
+# facebook: deanattali
+# github: daattali
+# twitter: daattali
+# patreon: DeanAttali
+# youtube: "@daattali"
+# whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -102,7 +103,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "somebusinessidea.co.uk"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
