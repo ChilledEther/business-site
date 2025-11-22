@@ -22,6 +22,7 @@ author: Jarred Roberts
 navbar-links:
   Services: "/services/"
   About Me: "/aboutme/"
+  Technologies: "/technologies/"
   # Blog: "/blog/"
 
 ################
