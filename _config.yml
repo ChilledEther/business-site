@@ -20,9 +20,9 @@ author: Jarred Roberts
 ###############################################
 
 navbar-links:
-  Services: "_pages/services"
-  Blog: "_pages/blog"
-  About Me: "_pages/aboutme"
+  Services: "services"
+  Blog: "blog"
+  About Me: "aboutme"
 
 ################
 # --- Logo --- #
