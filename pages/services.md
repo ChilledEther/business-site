@@ -1,10 +1,15 @@
 ---
 layout: page
 title: Services
-subtitle: I offer the following services
+# subtitle: I offer the following services
 permalink: /services/
 ---
 
-* Provisioning cloud infrastructure using Infrastructure-as-Code
+With 
 
+# Services I offer
+
+* Help launching software into the cloud
+* Modernise 
+* Teach and train 
 * Help with Kubernetes related queries
