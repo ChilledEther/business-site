@@ -21,8 +21,8 @@ author: Jarred Roberts
 
 navbar-links:
   Services: "/pages/services/"
-  Blog: "/pages/blog/"
   About Me: "/pages/aboutme/"
+  Blog: "/pages/blog/"
 
 ################
 # --- Logo --- #
