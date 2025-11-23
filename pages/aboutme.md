@@ -9,6 +9,12 @@ permalink: /aboutme/
 I have a passion for large scale automation and working closely with people to solve their technical problems.
 I am very honest and upfront about things, and prefer to keep things transparent.
 
+# 🤙 Contact
+
+I am only accepting communication via email currently.
+
+To reach out, please contact me on: mailto:hello@bristolcloudworks.co.uk 
+
 # 📖 My story
 
 I have worked in IT for the past 15+ years for various companies. Working in traditional setups and large software businesses that offer SaaS solutions to global companies.
