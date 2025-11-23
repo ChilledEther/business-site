@@ -11,8 +11,6 @@ I am very honest and upfront about things, and prefer to keep things transparent
 
 # 🤙 Contact
 
-I am only accepting communication via email currently.
-
 To reach out, please contact me on: mailto:hello@bristolcloudworks.co.uk 
 
 # 📖 My story
