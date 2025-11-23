@@ -15,7 +15,7 @@ To reach out, please contact me on: [hello@cliftoncloudworks.co.uk](mailto:hello
 
 # 📖 My story
 
-I have worked in IT for the past 15+ years for various companies. Working in traditional setups and large software businesses that offer SaaS solutions to global companies.
+I have worked in IT for the past 15+ years for various companies. Working in traditional setups and large software businesses that offer SaaS solutions to global customers.
 
 Some of the fields I have worked in:
 
