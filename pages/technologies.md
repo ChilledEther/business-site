@@ -20,11 +20,11 @@ GitHub is a developer platform primarily used for Git, CI/CD workflows (sometime
 
 Having worked with various git providers and CI/CD tools throughout the years, I now only specialise in GitHub or migrations to GitHub.
 
-GitHub is the largest developer platform, and for good reason. They are one of the few developer platforms that are fully onboarding AI and integrating it into many parts of their system when AI is rapidly growing.
+GitHub is the largest developer platform, and for good reason. They are one of the few developer platforms that are fully onboarding AI and integrating it into many parts of their system as AI rapidly expands.
 
 A majority of open source projects are hosted on GitHub, making it easy for you to navigate and collaborate, read code, and use as context for AI.
 
-They also cater to all kinds of developers, enabling the next generation of developers to leverage their tools.
+They also cater to all kinds of developers, enabling the next generation of developers to leverage their tools with a good social media presence.
 
 # 🏭 Kubernetes
 
