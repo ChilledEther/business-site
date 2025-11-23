@@ -11,7 +11,9 @@ I am very honest and upfront about things, and prefer to keep things transparent
 
 # 🤙 Contact
 
-To reach out, please contact me on: [hello@cliftoncloudworks.co.uk](mailto:hello@cliftoncloudworks.co.uk) 
+To reach out, please contact me on: [hello@cliftoncloudworks.co.uk](mailto:hello@cliftoncloudworks.co.uk)
+
+Once we begin to work, the preferred method of communication is [Slack](https://slack.com/intl/en-gb/) or [Teams](https://www.microsoft.com/en-gb/microsoft-teams/group-chat-software)
 
 # 📖 My story
 
