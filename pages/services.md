@@ -37,7 +37,7 @@ But it doesn't stop there! I am happy to work with you to help you solve any oth
 
 It can be very difficult to know where to start when it comes to deploying software into the cloud. Especially when you're taking your own idea to the market for the first time. 
 
-I will work with you to ensure that the foundation for your product delivery is setup in a way that can be easily scaled as you organically grow. You will have full ownership of any code that is produced as part of the process, and will get full support throughout your journey.
+I will work with you to ensure that the foundation for your product delivery is setup in a way that can be easily scaled as you organically grow. You will have full ownership of any code that is produced as part of the process, and will get full support throughout your journey along with knowledge sharing about why doing approaches one way are more beneficial than others.
 
 # 🏤 SMEs
 
