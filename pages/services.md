@@ -8,6 +8,10 @@ With the current tech landscape evolving rapidly, it's hard to know what the rig
 
 I can work closely with entrepreneurs and small businesses to take their ideas from source code to running in production in the cloud.
 
+Whether you're local to Bristol and want a more personalise experience, or from afar and remote communication is more your style, I am happy to accomodate to your preference. 
+
+To reach out, please contact me on: [hello@bristolcloudworks.co.uk](mailto:hello@bristolcloudworks.co.uk) 
+
 # 🫰 Prices
 
 My standard rate is £200 (VAT Incl.) per hour of consultancy.
