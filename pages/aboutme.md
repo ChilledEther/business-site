@@ -25,4 +25,6 @@ Some of the fields I have worked in:
 * Retail
 * Consultancy
 
-This broad exposure has allowed me to gain a lot of knowledge in how businesses operate, what their common pitfalls are, and what good looks like. This allows me to steer businesses in the right direction when it comes to software delivery and ensure that entrepreneurs don't fall into traps as they start to scale up.
+This broad exposure has allowed me to gain a lot of knowledge in how businesses operate, what their common pitfalls are, and what good looks like. 
+
+This allows me to steer businesses and entrepreneurs in the right direction when it comes to software delivery and ensure that you don't fall into traps as you begin to scale up.
