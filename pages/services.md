@@ -27,9 +27,9 @@ Some of the main services I offer are:
 * Build appropriate CI/CD workflows (GitHub)
 * Teach how you can leverage agentic AI when working on your product
 * Troubleshooting infrastructure related issues
-* Build automated solutions to fill any gaps
+* Build automated solutions to fill any gaps within your business
 * Migrations from one git provider to GitHub
-  * Including workflows and actions
+  * Including the conversion to GitHub workflows and GitHub actions
 
 But it doesn't stop there! I am happy to work with you to help you solve any other tech related issues, but I specialise only in modern tech. 
 
