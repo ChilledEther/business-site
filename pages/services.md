@@ -10,7 +10,7 @@ I can work closely with entrepreneurs and small businesses to take their ideas f
 
 Whether you're local to Bristol and want a more personalise experience, or from afar and remote communication is more your style, I am happy to accomodate to your preference. 
 
-To reach out, please contact me on: [hello@cliftoncloudworks.co.uk](mailto:hello@cliftoncloudworks.co.uk) 
+To reach out, please **contact** me on: [hello@cliftoncloudworks.co.uk](mailto:hello@cliftoncloudworks.co.uk) 
 
 # 🫰 Prices
 
