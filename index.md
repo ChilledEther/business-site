@@ -3,8 +3,8 @@ layout: page
 title: Clifton Cloudworks 
 subtitle: Offering software delivery and cloud engineering services
 ---
-<p style="padding-top: 40px; display:flex; align-items:center; justify-content:center; margin:0; text-align:center;"></p>
-
+<p style="padding-top: 40px; display:flex; align-items:center; justify-content:center; margin:0; text-align:center;">
 Based in Bristol, UK, Clifton Cloudworks helps startups and small businesses deliver software products quickly and reliably using modern cloud-native technologies and best practices.
 
 Whether you're just starting out or looking to scale, we provide tailored solutions to meet your unique needs.
+</p>
