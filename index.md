@@ -8,16 +8,16 @@ js:
 
 <style>
   :root {
-    --page-col: #0b0c10;
-    --text-col: #c5c6c7;
-    --link-col: #66fcf1;
-    --hover-col: #45a29e;
-    --navbar-col: #1f2833;
-    --navbar-text-col: #c5c6c7;
-    --navbar-border-col: #45a29e;
-    --footer-col: #1f2833;
-    --footer-text-col: #c5c6c7;
-    --footer-link-col: #66fcf1;
+    --page-col: #1d2228;
+    --text-col: #ececec;
+    --link-col: #326ce5; /* K8s blue */
+    --hover-col: #b7d0f9;
+    --navbar-col: rgba(29, 34, 40, 0.9);
+    --navbar-text-col: #ececec;
+    --navbar-border-col: #326ce5;
+    --footer-col: #1d2228;
+    --footer-text-col: #ccc;
+    --footer-link-col: #326ce5;
   }
   body {
     background-color: transparent !important;
