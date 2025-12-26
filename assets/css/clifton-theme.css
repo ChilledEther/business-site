@@ -432,3 +432,22 @@ a {
   background-position: 0 0;
   pointer-events: none;
 }
+
+/* Mobile & Reduced Motion Optimizations */
+@media (max-width: 768px) {
+  .static-page-background::before,
+  .static-page-background::after {
+    animation: none !important; /* Disable moving blobs */
+    filter: blur(30px); /* Reduce blur cost */
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .static-page-background::before,
+  .static-page-background::after,
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

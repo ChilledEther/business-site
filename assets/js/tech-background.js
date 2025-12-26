@@ -95,7 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function initHexagons() {
         hexagons = [];
-        const numHexagons = Math.floor((width * height) / 12000); // Density control
+        const isMobile = width < 768;
+        // On mobile, use lower density (higher divisor)
+        const densityDivisor = isMobile ? 20000 : 12000;
+        const numHexagons = Math.floor((width * height) / densityDivisor);
         
         for (let i = 0; i < numHexagons; i++) {
             hexagons.push(new Hexagon(Math.random() * width, Math.random() * height));
@@ -103,31 +106,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function animate() {
+        // Check for reduced motion preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+             // Render once and stop
+             ctx.clearRect(0, 0, width, height);
+             hexagons.forEach(h => h.draw());
+             return; 
+        }
+
         ctx.clearRect(0, 0, width, height);
 
-        // Draw connections (Service Mesh look)
-        ctx.strokeStyle = '#70966a';
-        ctx.lineWidth = 0.5;
+        const isMobile = width < 768;
 
+        // Draw connections (Service Mesh look) - HEAVY CALCULATION
+        // Disable on mobile to save battery and FPS
+        if (!isMobile) {
+            ctx.strokeStyle = '#70966a';
+            ctx.lineWidth = 0.5;
+
+            for (let i = 0; i < hexagons.length; i++) {
+                const h1 = hexagons[i];
+                // Update and draw handled below to avoid double loops if we wanted, 
+                // but checking connections requires the nested loop.
+                // For efficiency, we update positions here if not done separately.
+            }
+            
+            // Optimization: Combine loops? 
+            // Currently structure: Hex loop -> Update/Draw. Nested Loop -> Connections. 
+            // We can keep it separate for clarity or merge for slight perf. 
+            // Let's stick to the existing logic but wrapped in checks.
+        }
+
+        // Main Loop
         for (let i = 0; i < hexagons.length; i++) {
             const h1 = hexagons[i];
             h1.update();
             h1.draw();
 
-            for (let j = i + 1; j < hexagons.length; j++) {
-                const h2 = hexagons[j];
-                const dx = h1.x - h2.x;
-                const dy = h1.y - h2.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
+            // Connections (Only on Desktop)
+            if (!isMobile) {
+                for (let j = i + 1; j < hexagons.length; j++) {
+                    const h2 = hexagons[j];
+                    const dx = h1.x - h2.x;
+                    const dy = h1.y - h2.y;
+                    // Pre-check rough distance to avoid sqrt
+                    if (Math.abs(dx) > connectionDist || Math.abs(dy) > connectionDist) continue;
 
-                if (dist < connectionDist) {
-                    ctx.beginPath();
-                    ctx.moveTo(h1.x, h1.y);
-                    ctx.lineTo(h2.x, h2.y);
-                    const alpha = (1 - dist / connectionDist) * 0.3;
-                    ctx.globalAlpha = alpha;
-                    ctx.stroke();
-                    ctx.globalAlpha = 1;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < connectionDist) {
+                        ctx.beginPath();
+                        ctx.moveTo(h1.x, h1.y);
+                        ctx.lineTo(h2.x, h2.y);
+                        const alpha = (1 - dist / connectionDist) * 0.3;
+                        ctx.globalAlpha = alpha;
+                        ctx.stroke();
+                        ctx.globalAlpha = 1;
+                    }
                 }
             }
         }
