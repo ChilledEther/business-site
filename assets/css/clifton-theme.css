@@ -288,22 +288,22 @@ body {
 }
 
 /* Glassy Footer - Sticky/Flex */
+/* Glassy Footer - Sticky/Flex */
 footer {
   background-color: var(--footer-col) !important;
   border-top: none !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   margin: 0 !important;
-  padding: 10px 0 !important;
+  padding: 20px 0 !important; /* Touch-friendly padding */
   z-index: 100;
-  font-size: 0.75rem !important;
-  /* Flex item behavior */
+  font-size: 0.9rem !important; /* Slightly larger text */
   flex-shrink: 0;
   position: relative !important;
   width: 100%;
 }
 
-/* Footer Flex Layout */
+/* Footer Flex Layout - Responsive */
 footer .container .row > div {
   display: flex !important;
   justify-content: space-between !important;
@@ -313,31 +313,104 @@ footer .container .row > div {
   max-width: 100% !important;
   flex: 0 0 100% !important;
   margin: 0 !important;
+  flex-wrap: wrap; /* Safety for small screens */
+  gap: 20px;
 }
 
 footer ul.list-inline {
   margin: 0 !important;
   padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .list-inline-item {
+    margin: 0 8px !important;
 }
 
 footer p {
   margin: 0 !important;
 }
 
-/* Footer Icons */
+/* Footer Icons - Touch Friendly & Visible */
 footer .fa-stack {
-  width: 1.5em !important;
-  height: 1.5em !important;
-  line-height: 1.5em !important;
-  font-size: 1.1rem !important;
+  width: 1.8em !important;
+  height: 1.8em !important;
+  font-size: 1.3rem !important;
+  display: inline-block !important; /* Robust container behavior */
+  position: relative;
+  vertical-align: middle;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+footer .fa-stack:hover {
+    transform: scale(1.1);
 }
 
 footer .fa-stack-2x {
-  font-size: 1.5em !important;
+  /* Background Square */
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  color: transparent !important;
+  background-color: rgba(112, 150, 106, 0.15);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  
+  /* Reset Any Font Styling interfering with box */
+  line-height: normal !important; 
+  display: block !important;
 }
 
 footer .fa-stack-1x {
-  font-size: 0.8em !important;
+  /* The Icon - Absolute Center with Visual Correction */
+  font-size: 1.15em !important;
+  color: var(--footer-link-col) !important;
+  
+  position: absolute !important;
+  top: 53% !important; /* Visual centering (nudge down) */
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  
+  width: auto !important;
+  height: auto !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  z-index: 2;
+  transition: color 0.2s;
+  text-align: center;
+}
+
+footer a:hover .fa-stack-1x {
+  color: #fff !important;
+}
+
+footer a:hover .fa-stack-2x {
+    background-color: var(--link-col) !important;
+    opacity: 0.9;
+}
+
+/* Mobile-Specific Footer Layout */
+@media (max-width: 768px) {
+    footer .container .row > div {
+        flex-direction: column !important; /* Stack vertically */
+        justify-content: center !important;
+        text-align: center;
+        gap: 25px; /* Separation between icons and copyright */
+    }
+    
+    footer .fa-stack {
+        font-size: 1.4rem !important; /* Even larger base on mobile */
+    }
+    
+    footer .copyright {
+        order: 2; /* Ensure copyright is at bottom */
+        opacity: 0.8;
+    }
 }
 
 /* Content Layout Fixes for internal pages */
