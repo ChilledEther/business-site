@@ -297,7 +297,7 @@ footer {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   margin: 0 !important;
-  padding: 20px 0 !important; /* Touch-friendly padding */
+  padding: 10px 0 !important; /* Touch-friendly padding */
   z-index: 100;
   font-size: 0.9rem !important; /* Slightly larger text */
   flex-shrink: 0;
@@ -325,7 +325,7 @@ footer .container .row > div {
 }
 
 footer ul.list-inline {
-  margin: 0 !important;
+  margin: 0 0 10px 0 !important;
   padding: 0 !important;
   display: flex;
   align-items: center;
