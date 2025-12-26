@@ -13,7 +13,7 @@ js:
   /* We need transparency to see the canvas background */
   body {
     background-color: transparent !important;
-    overflow: hidden !important; /* Prevent scrolling on splash page */
+    /* overflow: hidden !important; Removed to allow scrolling on smaller screens */
   }
 
   /* Centering wrapper specific to home content */
@@ -38,6 +38,7 @@ js:
       max-width: 900px;
       width: 90%;
       height: auto; /* Fit content */
+      margin-bottom: 40px; /* Add bottom margin for scrolling breathing room */
   }
   
   .home-content-wrapper h1 {
@@ -62,7 +63,9 @@ js:
       display: flex !important;
       align-items: center;
       justify-content: center;
-      height: 100%;
+      min-height: 100vh; /* Allow growth */
+      padding-top: 100px; /* Ensure content starts below fixed navbar */
+      padding-bottom: 20px;
   }
 
   .home-content-wrapper p {
