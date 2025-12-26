@@ -114,13 +114,51 @@ footer .fa-stack-1x {
 
 /* Content Layout Fixes for internal pages */
 body > main {
-  padding-top: 80px; /* Space for fixed navbar */
-  /* Remove bottom padding as footer is not fixed/absolute */
+  /* padding-top: 80px;  Removed: Header accounts for nav offset, or specific page styles should handle it. */
   padding-bottom: 20px;
   flex: 1 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+
+/* Header & Typography Overrides */
+.intro-header {
+    margin-top: 100px !important;
+    margin-bottom: 30px !important;
+    padding-bottom: 0 !important; /* Remove huge padding from Beautiful Jekyll defaults */
+}
+
+@media (min-width: 1200px) {
+  .intro-header {
+      margin-top: 110px !important;
+  }
+}
+
+.intro-header .page-heading {
+    padding: 0 !important;
+}
+
+.intro-header .page-heading h1 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(50, 108, 229, 0.4);
+    letter-spacing: -0.5px;
+}
+
+.intro-header .page-heading .page-subheading {
+    color: #b7d0f9;
+    font-size: 1.15rem !important;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.intro-header hr.small {
+    display: none; /* Cleaner look without the divider */
 }
 
 /* Card/Content Styling for readability on dark background */

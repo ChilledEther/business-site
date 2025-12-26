@@ -203,7 +203,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
 <div class="pricing-banner glassy-card">
   <h2>Transparent Pricing</h2>
   <p>Expert consultancy with no hidden fees.</p>
-  <div class="price-tag">£200 <span style="font-size: 1rem; opacity: 0.7;">/ hour (VAT Incl.)</span></div>
+  <div class="price-tag">£200 <span style="font-size: 1rem; opacity: 0.7;">/ hour (VAT Excl.)</span></div>
   <p>Flexible engagement models available: Retainer, Project-based, or Ad-hoc.</p>
   
   <a href="mailto:hello@cliftoncloudworks.co.uk?subject=Consultancy%20Enquiry" class="cta-button">
