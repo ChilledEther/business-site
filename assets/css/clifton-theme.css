@@ -184,7 +184,7 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-/* Immersive Static Background for Internal Pages */
+/* Immersive Liquid/Aurora Blobs Background */
 .static-page-background {
   position: fixed;
   top: 0;
@@ -193,23 +193,56 @@ a {
   height: 100vh;
   z-index: -1;
   background-color: var(--page-col);
-  
-  /* Modern Honeycomb + Dynamic Glows */
-  background-image: 
-      /* Stronger Olive Glow Top-Left */
-      radial-gradient(circle at 0% 0%, rgba(112, 150, 106, 0.15), transparent 50%),
-      /* Subtle Grey/Green Glow Bottom-Right */
-      radial-gradient(circle at 100% 100%, rgba(100, 110, 100, 0.1) 0%, transparent 50%),
-      /* Highlight Glow Center-Right */
-      radial-gradient(circle at 80% 40%, rgba(112, 150, 106, 0.08), transparent 30%),
-      
-      /* Hexagon Pattern (SVG Data URI) - Fill updated to olive */
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2370966a' fill-opacity='0.08' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v13.2l11 6.35 11-6.35V17.9l-11-6.35L3 17.9zM0 45l14 8 14-8v-9.33l-14 8.01-14-8.01V45zM28 4l-14-8-14 8v9.33l14-8.01 14 8.01V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      
-  background-size: 100% 100%, 100% 100%, 100% 100%, auto; /* Auto size for hex pattern (tiles) */
-  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
-  background-position: 0 0;
-  pointer-events: none;
+  overflow: hidden; /* Contain the blobs */
+}
+
+.static-page-background::before,
+.static-page-background::after {
+  content: "";
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Organic starting shape */
+  mix-blend-mode: screen; /* Blends blobs nicely */
+  filter: blur(60px); /* Soften edges for aurora feel */
+  opacity: 0.4;
+  animation: blob-move 20s infinite alternate ease-in-out;
+}
+
+/* Blob 1 - Sage/Olive */
+.static-page-background::before {
+  top: -10%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(112, 150, 106, 0.8), transparent 70%);
+  animation-duration: 25s;
+}
+
+/* Blob 2 - Deep Green/Teal */
+.static-page-background::after {
+  bottom: -10%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(79, 111, 82, 0.9), transparent 70%);
+  animation-duration: 35s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes blob-move {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
+  33% {
+    transform: translate(10vw, 5vh) rotate(50deg) scale(1.1);
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  66% {
+    transform: translate(-5vw, 10vh) rotate(120deg) scale(0.9);
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
 }
 
 /* Base Body Styles */
@@ -382,7 +415,7 @@ a {
   z-index: -1;
   background-color: var(--page-col);
   
-  /* Modern Honeycomb + Dynamic Glows */
+  /* Modern Waves + Dynamic Glows */
   background-image: 
       /* Stronger Blue Glow Top-Left */
       radial-gradient(circle at 0% 0%, rgba(50, 108, 229, 0.15), transparent 50%),
@@ -391,10 +424,10 @@ a {
       /* Highlight Glow Center-Right */
       radial-gradient(circle at 80% 40%, rgba(50, 108, 229, 0.08), transparent 30%),
       
-      /* Hexagon Pattern (SVG Data URI) */
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23326ce5' fill-opacity='0.08' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v13.2l11 6.35 11-6.35V17.9l-11-6.35L3 17.9zM0 45l14 8 14-8v-9.33l-14 8.01-14-8.01V45zM28 4l-14-8-14 8v9.33l14-8.01 14 8.01V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      /* Wave Pattern (SVG Data URI) */
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%2370966a' stroke-width='2' stroke-opacity='0.08'/%3E%3C/svg%3E");
       
-  background-size: 100% 100%, 100% 100%, 100% 100%, auto; /* Auto size for hex pattern (tiles) */
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100px 30px; /* Tiled waves */
   background-repeat: no-repeat, no-repeat, no-repeat, repeat;
   background-position: 0 0;
   pointer-events: none;
