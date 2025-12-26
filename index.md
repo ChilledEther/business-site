@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Clifton Cloudworks
 subtitle: Offering software delivery and cloud engineering services
 js:
@@ -25,6 +25,7 @@ js:
       z-index: 10;
       padding: 0 20px;
       height: 100%; /* Fill the main container */
+      width: 100%;
   }
   
   .home-content-wrapper h1 {
@@ -42,6 +43,14 @@ js:
       font-weight: 300;
   }
 
+  /* Force main to take full height for centering, but respect navbar padding */
+  main {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+
   .home-content-wrapper p {
       font-size: 1.25rem;
       max-width: 800px;
@@ -51,14 +60,16 @@ js:
   }
 </style>
 
-<div class="home-content-wrapper">
-  <h1>Clifton Cloudworks</h1>
-  <h2>Software Delivery & Cloud Engineering</h2>
-  
-  <p>
-    Based in Bristol, UK, we help startups and small businesses deliver software products quickly and reliably using modern cloud-native technologies and best practices.
-  </p>
-  <p>
-    Whether you're just starting out or looking to scale, we provide tailored solutions to meet your unique needs.
-  </p>
-</div>
+<main>
+  <div class="home-content-wrapper">
+    <h1>Clifton Cloudworks</h1>
+    <h2>Software Delivery & Cloud Engineering</h2>
+    
+    <p>
+      Based in Bristol, UK, we help startups and small businesses deliver software products quickly and reliably using modern cloud-native technologies and best practices.
+    </p>
+    <p>
+      Whether you're just starting out or looking to scale, we provide tailored solutions to meet your unique needs.
+    </p>
+  </div>
+</main>
