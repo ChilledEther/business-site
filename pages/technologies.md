@@ -121,7 +121,6 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
       <span class="tech-tag">AKS / EKS / GKE</span>
       <span class="tech-tag">Helm</span>
       <span class="tech-tag">Docker</span>
-      <span class="tech-tag">Cert-Manager</span>
     </div>
   </div>
 
@@ -136,6 +135,7 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
       <span class="tech-tag">OpenTofu</span>
       <span class="tech-tag">Pulumi</span>
       <span class="tech-tag">Bicep</span>
+      <span class="tech-tag">Crossplane</span>
     </div>
   </div>
 
@@ -148,7 +148,6 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
     <div class="tech-tags">
       <span class="tech-tag">ArgoCD</span>
       <span class="tech-tag">Flux</span>
-      <span class="tech-tag">Crossplane</span>
     </div>
   </div>
 

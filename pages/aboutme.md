@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 permalink: /aboutme/
-share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate Cloud Engineer helping businesses scale with automation and honesty.
+share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate Platform Engineer helping businesses scale with automation and honesty.
 ---
 
 <style>
@@ -115,10 +115,10 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
     <!-- <img src="/assets/img/jarred.jpg" style="width: 150px; border-radius: 50%; border: 3px solid #326ce5;"> -->
     <div class="profile-text">
         <p>
-            👋 Hey, I'm <strong>Jarred</strong>. I'm a Cloud Engineer and Consultant engaging with businesses to solve complex delivery problems.
+            👋 Hey, I'm <strong>Jarred</strong>. I'm a Platform Engineer and Consultant engaging with businesses to solve complex delivery problems.
         </p>
         <p>
-            I believe in <strong>transparency, automation, and simplicity</strong>. My goal isn't just to build infrastructure; it's to empower your team to own it. I bridge the gap between "it works on my machine" and "it creates value in production".
+            I believe in transparency, automation, and simplicity. My goal isn't just to build infrastructure; it's to empower your team to own it. I bridge the gap between "it works on my machine" and "it creates value in production".
         </p>
     </div>
   </div>
@@ -137,9 +137,9 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
     <h2><i class="fas fa-industry"></i> Industry Experience</h2>
     <div class="experience-list">
         <div class="experience-item"><i class="fas fa-gas-pump"></i> Oil & Gas</div>
-        <div class="experience-item"><i class="fas fa-chart-line"></i> Finance & Fintech</div>
+        <div class="experience-item"><i class="fas fa-chart-line"></i> Finance</div>
         <div class="experience-item"><i class="fas fa-database"></i> Data & Analytics</div>
-        <div class="experience-item"><i class="fas fa-shopping-cart"></i> Retail & E-commerce</div>
+        <div class="experience-item"><i class="fas fa-shopping-cart"></i> Retail</div>
         <div class="experience-item"><i class="fas fa-briefcase"></i> Technical Consultancy</div>
     </div>
   </div>

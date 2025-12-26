@@ -125,14 +125,20 @@ body > main {
 /* Header & Typography Overrides */
 .intro-header {
     margin-top: 100px !important;
-    margin-bottom: 30px !important;
-    padding-bottom: 0 !important; /* Remove huge padding from Beautiful Jekyll defaults */
+    margin-bottom: 0 !important; /* Removed bottom gap entirely */
+    padding-bottom: 0 !important;
 }
 
 @media (min-width: 1200px) {
   .intro-header {
       margin-top: 110px !important;
   }
+}
+
+/* Remove default top margins from the first content element to pull it up */
+main .container-md > .row > div > *:first-child,
+main .container-md > .row > div > div:first-child > p:first-child {
+    margin-top: 0 !important;
 }
 
 .intro-header .page-heading {

@@ -129,9 +129,9 @@ share-description: tailored software delivery, cloud engineering, and platform b
     <h3><i class="fas fa-cloud"></i> Cloud Engineering</h3>
     <p>Comprehensive cloud-native solutions designed for scale and reliability.</p>
     <ul>
-      <li><strong>Kubernetes</strong> Platform Design</li>
-      <li>Infrastructure as Code (Terraform, Pulumi)</li>
-      <li>Cloud Architecture (AWS, Azure, GCP)</li>
+      <li>Kubernetes Platform Design</li>
+      <li>Infrastructure as Code</li>
+      <li>Cloud Architecture</li>
       <li>Serverless & Microservices</li>
     </ul>
   </div>
@@ -140,7 +140,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
     <h3><i class="fas fa-code-branch"></i> Platform Engineering</h3>
     <p>Empower your developers with robust tooling and automated workflows.</p>
     <ul>
-      <li><strong>GitOps</strong> Implementation (ArgoCD, Flux)</li>
+      <li>GitOps Implementation (ArgoCD, Flux)</li>
       <li>CI/CD Pipelines (GitHub Actions)</li>
       <li>Internal Developer Platforms (IDP)</li>
       <li>Automated Testing & Quality Gates</li>
@@ -151,7 +151,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
     <h3><i class="fas fa-robot"></i> AI & Automation</h3>
     <p>Leverage the latest in AI to streamline operations and enhance products.</p>
     <ul>
-      <li><strong>Agentic AI</strong> Workflows</li>
+      <li>Agentic AI Workflows</li>
       <li>LLM Ops & Deployment</li>
       <li>Business Process Automation</li>
       <li>Infrastructure Self-Healing</li>
@@ -163,7 +163,6 @@ share-description: tailored software delivery, cloud engineering, and platform b
     <p>Modernize your legacy stack with zero downtime strategies.</p>
     <ul>
       <li>Git Provider Migrations (to GitHub)</li>
-      <li>Monolith to Microservices</li>
       <li>On-Premise to Cloud</li>
       <li>Workflow Optimization</li>
     </ul>
