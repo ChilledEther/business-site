@@ -116,6 +116,32 @@ share-description: tailored software delivery, cloud engineering, and platform b
       background: #4f6f52;
       text-decoration: none;
   }
+  /* Mobile & Accessibility Optimizations */
+  @media (max-width: 768px) {
+    .pricing-banner {
+      padding: 25px;
+    }
+    
+    .price-tag {
+      font-size: 2rem;
+    }
+
+    /* Reduce glass effect cost on mobile */
+    .glass-card {
+       backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+     .glass-card {
+        transition: none;
+     }
+     .glass-card:hover {
+        transform: none;
+        box-shadow: none;
+     }
+  }
 </style>
 
 <div class="services-intro">

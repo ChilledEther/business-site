@@ -105,6 +105,26 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
       flex-direction: column;
       text-align: center;
     }
+    
+    /* Optimize glass effect for mobile performance */
+    .glass-section {
+        padding: 25px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    
+    .contact-cta {
+        padding: 30px 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+      .btn-primary-glass {
+          transition: none;
+      }
+      .btn-primary-glass:hover {
+          transform: none;
+      }
   }
 </style>
 

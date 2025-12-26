@@ -74,6 +74,25 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
     font-size: 0.8rem;
     font-weight: 500;
   }
+  /* Mobile & Accessibility Optimizations */
+  @media (max-width: 768px) {
+    .glass-card {
+       /* Reduce blur radius for performance */
+       backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+       padding: 20px; /* Compress padding */
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+     .glass-card {
+        transition: none;
+     }
+     .glass-card:hover {
+        transform: none;
+        box-shadow: none;
+     }
+  }
 </style>
 
 <div class="tech-intro">
