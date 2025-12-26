@@ -63,7 +63,8 @@ js:
       display: flex !important;
       align-items: center;
       justify-content: center;
-      min-height: 100vh; /* Allow growth */
+      /* min-height: 100vh; Removed to prevent forcing scrollbar */
+      height: 100%; /* Fill the flex parent */
       padding-top: 100px; /* Ensure content starts below fixed navbar */
       padding-bottom: 20px;
   }
