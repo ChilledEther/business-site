@@ -1,0 +1,134 @@
+/* Clifton Cloudworks Theme - Dark K8s/Techno Style */
+
+/* Global Colors - Updates CSS Variables used by Beautiful Jekyll */
+:root {
+  --page-col: #1d2228;
+  --text-col: #ececec;
+  --link-col: #326ce5; /* K8s blue */
+  --hover-col: #b7d0f9;
+
+  /* Glassy transparent colors */
+  --navbar-col: rgba(29, 34, 40, 0.4);
+  --navbar-text-col: #ececec;
+  --navbar-border-col: rgba(50, 108, 229, 0.3);
+
+  --footer-col: rgba(29, 34, 40, 0.4);
+  --footer-text-col: #ccc;
+  --footer-link-col: #326ce5;
+}
+
+/* Base Body Styles */
+body {
+  background-color: var(--page-col);
+  color: var(--text-col);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Home Page Specific Overrides */
+/* The home page will override overflow-y to hidden in index.md if needed */
+
+/* Glassy Navbar */
+.navbar-custom {
+  background-color: var(--navbar-col) !important;
+  border-bottom: 1px solid var(--navbar-border-col) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px !important;
+}
+
+/* Navbar Typography */
+.navbar-custom .navbar-brand {
+  font-size: 1.1rem !important;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--navbar-text-col) !important;
+}
+
+.navbar-custom .nav-link {
+  font-size: 0.85rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: var(--navbar-text-col) !important;
+}
+
+/* Glassy Footer - Sticky/Flex */
+footer {
+  background-color: var(--footer-col) !important;
+  border-top: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  z-index: 100;
+  font-size: 0.75rem !important;
+  /* Flex item behavior */
+  flex-shrink: 0;
+  position: relative !important;
+  width: 100%;
+}
+
+/* Footer Flex Layout */
+footer .container .row > div {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-direction: row-reverse !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  margin: 0 !important;
+}
+
+footer ul.list-inline {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer p {
+  margin: 0 !important;
+}
+
+/* Footer Icons */
+footer .fa-stack {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  line-height: 1.5em !important;
+  font-size: 1.1rem !important;
+}
+
+footer .fa-stack-2x {
+  font-size: 1.5em !important;
+}
+
+footer .fa-stack-1x {
+  font-size: 0.8em !important;
+}
+
+/* Content Layout Fixes for internal pages */
+body > main {
+  padding-top: 80px; /* Space for fixed navbar */
+  /* Remove bottom padding as footer is not fixed/absolute */
+  padding-bottom: 20px;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card/Content Styling for readability on dark background */
+.container-md {
+  /* If we want a card look or just text on dark */
+  color: var(--text-col);
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
