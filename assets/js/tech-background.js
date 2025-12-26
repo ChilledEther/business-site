@@ -12,19 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
     canvas.style.height = '100%';
     canvas.style.zIndex = '-1';
     canvas.style.pointerEvents = 'none';
-    canvas.style.backgroundColor = '#1d2228'; // Dark metallic/blue grey
+    canvas.style.backgroundColor = '#1a201c'; // Dark Forest/Olive Black
     
     document.body.appendChild(canvas);
 
     let width, height;
     let hexagons = [];
     
-    // K8s brand colors (approx) and complementary tech colors
+    // Olive/Green Tech colors
     const colors = [
-        '#326ce5', // K8s Blue
+        '#70966a', // Olive Green
         '#ffffff', // White
-        '#b7d0f9', // Light Blue
-        '#568af2'  // Mid Blue
+        '#a4c2a0', // Sage Green
+        '#4f6f52'  // Darker Hunter Green
     ];
 
     const hexSize = 25; // Size of individual hexagons
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.clearRect(0, 0, width, height);
 
         // Draw connections (Service Mesh look)
-        ctx.strokeStyle = '#326ce5';
+        ctx.strokeStyle = '#70966a';
         ctx.lineWidth = 0.5;
 
         for (let i = 0; i < hexagons.length; i++) {

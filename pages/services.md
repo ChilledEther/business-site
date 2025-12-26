@@ -28,7 +28,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
     background: rgba(29, 34, 40, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(50, 108, 229, 0.3);
+    border: 1px solid rgba(112, 150, 106, 0.3);
     border-radius: 12px;
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,11 +37,11 @@ share-description: tailored software delivery, cloud engineering, and platform b
   .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border-color: rgba(50, 108, 229, 0.6);
+    border-color: rgba(112, 150, 106, 0.6);
   }
 
   .glass-card h3 {
-    color: #326ce5; /* K8s blue */
+    color: #70966a; /* Olive Green */
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.5rem;
@@ -65,7 +65,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
 
   .glass-card li::before {
     content: "▹";
-    color: #326ce5;
+    color: #70966a;
     position: absolute;
     left: 0;
   }
@@ -86,8 +86,8 @@ share-description: tailored software delivery, cloud engineering, and platform b
 
   /* Pricing Section */
   .pricing-banner {
-    background: linear-gradient(135deg, rgba(50, 108, 229, 0.1) 0%, rgba(29, 34, 40, 0.8) 100%);
-    border: 1px solid #326ce5;
+    background: linear-gradient(135deg, rgba(112, 150, 106, 0.1) 0%, rgba(29, 34, 40, 0.8) 100%);
+    border: 1px solid #70966a;
     border-radius: 12px;
     padding: 40px;
     text-align: center;
@@ -105,7 +105,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
       display: inline-block;
       margin-top: 20px;
       padding: 12px 30px;
-      background: #326ce5;
+      background: #70966a;
       color: #fff !important;
       border-radius: 5px;
       text-decoration: none;
@@ -113,7 +113,7 @@ share-description: tailored software delivery, cloud engineering, and platform b
       transition: background 0.2s;
   }
   .cta-button:hover {
-      background: #2656c0;
+      background: #4f6f52;
       text-decoration: none;
   }
 </style>

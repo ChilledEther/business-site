@@ -26,7 +26,7 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
   }
   
   .profile-text strong {
-      color: #326ce5;
+      color: #70966a;
   }
 
   /* Glass Section - Reusing style for consistency */
@@ -34,14 +34,14 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
     background: rgba(29, 34, 40, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(50, 108, 229, 0.3);
+    border: 1px solid rgba(112, 150, 106, 0.3);
     border-radius: 12px;
     padding: 40px;
     margin-bottom: 40px;
   }
 
   .glass-section h2 {
-    color: #326ce5;
+    color: #70966a;
     margin-top: 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 15px;
@@ -65,14 +65,14 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
   }
   
   .experience-item i {
-      color: #326ce5;
+      color: #70966a;
   }
 
   .contact-cta {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(135deg, rgba(50, 108, 229, 0.15) 0%, rgba(29, 34, 40, 0.9) 100%);
-    border: 1px solid #326ce5;
+    background: linear-gradient(135deg, rgba(112, 150, 106, 0.15) 0%, rgba(29, 34, 40, 0.9) 100%);
+    border: 1px solid #70966a;
     border-radius: 12px;
   }
 
@@ -84,20 +84,20 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
       display: inline-block;
       margin-top: 20px;
       padding: 15px 40px;
-      background: #326ce5;
+      background: #70966a;
       color: white !important;
       border-radius: 30px;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(50, 108, 229, 0.4);
+      box-shadow: 0 4px 15px rgba(112, 150, 106, 0.4);
   }
 
   .btn-primary-glass:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(50, 108, 229, 0.6);
+      box-shadow: 0 6px 20px rgba(112, 150, 106, 0.6);
       text-decoration: none;
-      background: #2656c0;
+      background: #4f6f52;
   }
 
   @media (max-width: 768px) {
@@ -153,7 +153,7 @@ share-description: Meet Jarred, the founder of Clifton Cloudworks. A passionate 
     </a>
     
     <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
-        Prefer chat? Find me on <a href="https://www.linkedin.com/in/thejarredroberts/" target="_blank" style="color: #326ce5;">LinkedIn</a>.
+        Prefer chat? Find me on <a href="https://www.linkedin.com/in/thejarredroberts/" target="_blank" style="color: #70966a;">LinkedIn</a>.
         <br>
         Once we start, we collaborate directly via Slack or Teams.
     </p>

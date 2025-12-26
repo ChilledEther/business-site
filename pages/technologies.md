@@ -26,7 +26,7 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
     background: rgba(29, 34, 40, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(50, 108, 229, 0.3);
+    border: 1px solid rgba(112, 150, 106, 0.3);
     border-radius: 12px;
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -36,11 +36,11 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
   .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border-color: rgba(50, 108, 229, 0.6);
+    border-color: rgba(112, 150, 106, 0.6);
   }
 
   .glass-card h3 {
-    color: #326ce5;
+    color: #70966a;
     margin-top: 0;
     font-size: 1.4rem;
     display: flex;
@@ -66,8 +66,8 @@ share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AW
   }
 
   .tech-tag {
-    background: rgba(50, 108, 229, 0.15);
-    border: 1px solid rgba(50, 108, 229, 0.3);
+    background: rgba(112, 150, 106, 0.15);
+    border: 1px solid rgba(112, 150, 106, 0.3);
     color: #fff;
     padding: 4px 10px;
     border-radius: 20px;
