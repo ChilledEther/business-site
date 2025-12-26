@@ -2,64 +2,158 @@
 layout: page
 title: Technologies
 permalink: /technologies/
+share-description: Our curated tech stack includes Kubernetes, GitHub, Azure, AWS, Terraform, and GitOps tools. We build on modern, CNCF-certified foundations.
 ---
 
-# ☁️ Cloud Service Provider (CSP)
+<style>
+  .tech-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #ececec;
+  }
 
-The largest CSPs are:
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
 
-* Amazon Web Services (AWS)
-* Microsoft Azure
-* Google Cloud Platform (GCP)
+  /* Glass Card - Reusing generic style but ensuring it's defined for this page context */
+  .glass-card {
+    background: rgba(29, 34, 40, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(50, 108, 229, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
 
-I have primarily worked with Azure and have a majority of experience there. I am happy to work with any large CSP though.
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(50, 108, 229, 0.6);
+  }
 
-# 🤖 GitHub
+  .glass-card h3 {
+    color: #326ce5;
+    margin-top: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
 
-GitHub is a developer platform primarily used for Git, CI/CD workflows (sometimes known as pipelines), and Agentic Artificial Intelligence (AI) baked in.
+  .glass-card p {
+    font-size: 0.95rem;
+    color: #cecece;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
 
-Having worked with various git providers and CI/CD tools throughout the years, I now only specialise in GitHub or migrations to GitHub.
+  .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto; /* Push to bottom */
+  }
 
-GitHub is the largest developer platform, and for good reason. They are one of the few developer platforms that are fully onboarding AI and integrating it into many parts of their system as AI rapidly expands.
+  .tech-tag {
+    background: rgba(50, 108, 229, 0.15);
+    border: 1px solid rgba(50, 108, 229, 0.3);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+</style>
 
-A majority of open source projects are hosted on GitHub, making it easy for you to navigate and collaborate, read code, and use as context for AI.
+<div class="tech-intro">
+  <p>
+    We bet on <strong>proven, improved, and open</strong> technologies. By aligning with the Cloud Native Computing Foundation (CNCF) landscape and industry giants, we ensure your platform is future-proof, portable, and supported by a massive community.
+  </p>
+</div>
 
-They also cater to all kinds of developers, enabling the next generation of developers to leverage their tools with a good social media presence.
+<div class="tech-grid">
 
-# 🏭 Kubernetes
+  <!-- CSP -->
+  <div class="glass-card">
+    <h3><i class="fas fa-server"></i> Cloud Providers</h3>
+    <p>
+      We build cloud-agnostic solutions primarily, but have deep specialized experience in the major hyperscalers. While Azure is our primary stronghold, our Terraform and K8s expertise translates seamlessly across providers.
+    </p>
+    <div class="tech-tags">
+      <span class="tech-tag">Microsoft Azure</span>
+      <span class="tech-tag">AWS</span>
+      <span class="tech-tag">Google Cloud</span>
+    </div>
+  </div>
 
-When developing new applications, they tend to be packaged up as microservices and housed in containers. These containers are then ran on a platform. The most popular platforms are Kubernetes and Docker.
+  <!-- GitHub -->
+  <div class="glass-card">
+    <h3><i class="fab fa-github"></i> GitHub Ecosystem</h3>
+    <p>
+      More than just source control. GitHub is the center of our gravity for collaboration, CI/CD, and security. We leverage the full platform to enable high-velocity engineering teams.
+    </p>
+    <div class="tech-tags">
+      <span class="tech-tag">GitHub Actions</span>
+      <span class="tech-tag">GitHub Advanced Security</span>
+      <span class="tech-tag">Copilot</span>
+      <span class="tech-tag">Codespaces</span>
+    </div>
+  </div>
 
-Kubernetes is a full orchastration platform for containers. The ecosystem for Kubernetes has matured over the last 10 years and has become the de facto standard for running AI/ML workflows, and applications at scale.
+  <!-- Kubernetes -->
+  <div class="glass-card">
+    <h3><i class="fas fa-cubes"></i> Kubernetes (K8s)</h3>
+    <p>
+      The operating system of the cloud. We use K8s not just for running containers, but as a unified control plane for managing infrastructure, certificates, and scaling requirements.
+    </p>
+    <div class="tech-tags">
+      <span class="tech-tag">AKS / EKS / GKE</span>
+      <span class="tech-tag">Helm</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Cert-Manager</span>
+    </div>
+  </div>
 
-It can be leveraged and used for various other things such as infrastructure provisioning, certificate management, and so much more. The possibilities are extensive.
+  <!-- IaC -->
+  <div class="glass-card">
+    <h3><i class="fas fa-code"></i> Infrastructure as Code</h3>
+    <p>
+      If it's not in code, it doesn't exist. We enforce strict IaC practices to eliminate drift, enable disaster recovery, and allow rapid environment cloning.
+    </p>
+    <div class="tech-tags">
+      <span class="tech-tag">Terraform</span>
+      <span class="tech-tag">OpenTofu</span>
+      <span class="tech-tag">Pulumi</span>
+      <span class="tech-tag">Bicep</span>
+    </div>
+  </div>
 
-# 🏗️ Infrastructure-as-Code
+  <!-- GitOps -->
+  <div class="glass-card">
+    <h3><i class="fas fa-sync-alt"></i> GitOps</h3>
+    <p>
+      Continuous Deployment done right. We move beyond CI scripts and use Kubernetes-native operators to reconcile reliance, ensuring your production state always matches git.
+    </p>
+    <div class="tech-tags">
+      <span class="tech-tag">ArgoCD</span>
+      <span class="tech-tag">Flux</span>
+      <span class="tech-tag">Crossplane</span>
+    </div>
+  </div>
 
-When it comes to infrastructure, it is best to have the infrastructure declared in code. The main reason for this is so you can ensure that any time infrastructure is provisioned, it'll be exactly what is in code. It becomes a nightmare when manual changes are made that drift away from what is being declared.
+</div>
 
-There are a few tools out there that can help with this.
-
-Some of the main tools are:
-
-* [Terraform](https://developer.hashicorp.com/terraform)
-* [Pulumi](https://www.pulumi.com/)
-* [Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) (Azure only)
-* [Crossplane](https://www.crossplane.io/), or another operator (Kubernetes - GitOps)
-
-Over the years, I have started to lean more into the Kubernetes GitOps approach for a number of reasons.
-
-* It is easier to create high level abstractions for developers
-* It puts the complex ownership of infrastructure to a dedicated team (as you grow)
-* It doesn't require any additional workflows to provision
-* It sits closer with the source code that's using it
-
-# 🤺 GitOps
-
-GitOps simply stands for Git Operations. This means that your code is the source of truth. It is primarily known in the Kubernetes space for infrastructure and application provisioning, but the principles can be applied outside of this.
-
-Because [git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git) itself has version control, it makes it very easy for rollbacks, auditing, compliance, and automation.
-
-With a strong foundation, you will be able to rapidly develop and deploy your application at ease. This makes scaling your application very easy.
-
-The tech world is slowly moving towards an intent driven way of dealing with infrastructure, making AI + GitOps the modern approach with kubernetes being the core engine for the platform.
+<div style="text-align: center; margin-top: 50px; opacity: 0.8;">
+  <p><small><em>Don't see your specific tech? We prioritize principles over tools. If it's modern and cloud-native, we can likely work with it.</em></small></p>
+</div>
