@@ -176,3 +176,28 @@ main .container-md > .row > div > div:first-child > p:first-child {
 a {
   transition: all 0.2s ease-in-out;
 }
+
+/* Immersive Static Background for Internal Pages */
+.static-page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: var(--page-col);
+  
+  /* Modern Subtle Grid + Glow */
+  background-image: 
+      /* Soft Blue Glow Top-Right */
+      radial-gradient(circle at 80% 10%, rgba(50, 108, 229, 0.12) 0%, transparent 40%),
+      /* Soft Purple/Grey Glow Bottom-Left */
+      radial-gradient(circle at 10% 90%, rgba(100, 110, 130, 0.1) 0%, transparent 40%),
+      /* Grid Pattern */
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      
+  background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+  background-position: 0 0;
+  pointer-events: none; /* Ensure clicks pass through */
+}
