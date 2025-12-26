@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cliftoncloudworks.co.uk/sitemap.txt
+Sitemap: https://cliftoncloudworks.co.uk/sitemap.xml

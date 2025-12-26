@@ -15,6 +15,12 @@ title: Clifton Cloudworks
 # Your name to show in the footer
 author: Clifton Cloudworks
 
+# Description of the website (used for SEO)
+description: "Bristol-based consultancy specializing in Cloud Engineering, Kubernetes, and GitOps."
+
+# The base URL of your website (needed for sitemap and SEO)
+url: "https://cliftoncloudworks.co.uk"
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -126,7 +132,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "cloud engineering, kubernetes, gitops, devops, bristol, software delivery, clifton cloudworks"
 
 ######################################
 # --- Colours / background image --- #
