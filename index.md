@@ -23,9 +23,19 @@ js:
       text-align: center;
       color: #fff;
       z-index: 10;
-      padding: 0 20px;
-      height: 100%; /* Fill the main container */
-      width: 100%;
+      
+      /* Glassmorphism Card Style */
+      background: rgba(29, 34, 40, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(50, 108, 229, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      
+      padding: 60px 40px;
+      max-width: 900px;
+      width: 90%;
+      height: auto; /* Fit content */
   }
   
   .home-content-wrapper h1 {
